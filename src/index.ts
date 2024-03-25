@@ -21,9 +21,9 @@ routes(app);
 
 const port = config.port;
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   connectToDatabase();
   logger.info(`server is runnig on port ${port}`);
 });
 
-
+export { server };
