@@ -1,3 +1,3 @@
-import {app} from '../src/index';
+import routes from '../src/routes/route';
 
-export default app
+export default routes;
