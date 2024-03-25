@@ -10,7 +10,7 @@ const BoostrapServer = (): Application => {
 
     app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 
-    app.get("/", (req, res) => res.send("Express on Vercel"));
+    app.get("/got", (req, res) => res.send("Express on Vercel"));
 
     app.use(helmet());
     app.use(cors());
