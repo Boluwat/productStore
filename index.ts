@@ -18,6 +18,7 @@ app.use(express.json());
 
 routes(app);
 
+
 const port = config.port;
 
 const server = app.listen(port, () => {
