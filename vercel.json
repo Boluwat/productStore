@@ -1,12 +1,12 @@
 {
-    "functions": {
-      "api/**/*.ts": {
-        "runtime": "vercel-node@0.12",
-        "includeFiles": "api/**/*"
-      }
-    },
+    "version": 2,
     "routes": [
-      { "src": "/(.*)", "dest": "/api" }
+      { "handle": "filesystem" }
+    ],
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "src/index.ts"
+      }
     ]
   }
-  
