@@ -2,11 +2,11 @@ import express, { Application } from "express";
 import helmet from "helmet";
 import cors from "cors";
 import swaggerUi from "swagger-ui-express";
-import swaggerDoc from "./src/utils/swagger.config";
-import { routes } from "./src/routes";
-import connectToDatabase from "./src/utils/database";
-import config from "./src/utils/config";
-import logger from "./src/utils/logger";
+import swaggerDoc from "./utils/swagger.config";
+import { routes } from "./routes";
+import connectToDatabase from "./utils/database";
+import config from "./utils/config";
+import logger from "./utils/logger";
 
 const app = express();
 
