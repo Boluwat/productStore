@@ -5,7 +5,7 @@ import config from "./utils/config";
 import logger from "./utils/logger";
 
 
-const app: Application = BoostrapServer();
+export const app: Application = BoostrapServer();
 
 const port = config.port;
 
