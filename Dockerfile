@@ -5,4 +5,4 @@ RUN npm install
 COPY . .
 RUN npm run build
 RUN npm test
-CMD [ "node", "dist/index.js" ]
+CMD [ "node", "dist/index.ts" ]
