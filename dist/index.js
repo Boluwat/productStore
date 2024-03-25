@@ -23,5 +23,4 @@ app.listen(port, () => {
     (0, database_1.default)();
     logger_1.default.info(`server is runnig on port ${port}`);
 });
-// export { server };
 //# sourceMappingURL=index.js.map
