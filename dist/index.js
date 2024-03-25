@@ -3,7 +3,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.server = void 0;
 const express_1 = __importDefault(require("express"));
 const helmet_1 = __importDefault(require("helmet"));
 const cors_1 = __importDefault(require("cors"));
@@ -20,9 +19,9 @@ app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 (0, routes_1.routes)(app);
 const port = config_1.default.port;
-const server = app.listen(port, () => {
+app.listen(port, () => {
     (0, database_1.default)();
     logger_1.default.info(`server is runnig on port ${port}`);
 });
-exports.server = server;
+// export { server };
 //# sourceMappingURL=index.js.map
