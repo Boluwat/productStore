@@ -5,7 +5,7 @@ import config from "./utils/config";
 import logger from "./utils/logger";
 
 
-export const app: Application = BoostrapServer();
+const app: Application = BoostrapServer();
 
 const port = config.port;
 
@@ -14,4 +14,4 @@ const server = app.listen(port, () => {
   logger.info(`server is runnig on port ${port}`)
 });
 
-export { server };
+export { server, app };
