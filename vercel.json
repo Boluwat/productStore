@@ -6,7 +6,7 @@
       }
     },
     "routes": [
-      { "src": "/(.*)", "dest": "src/bootstrap.ts" }
+      { "src": "/(.*)", "dest": "/api" }
     ]
   }
   
